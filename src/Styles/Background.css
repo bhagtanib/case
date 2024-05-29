@@ -1,0 +1,121 @@
+.black-background {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  max-width: 100vw;
+  z-index: 10;
+  padding: 5% 5%;
+}
+.black-background-header p {
+  font-size: 22px;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  color: var(--background-green-color);
+}
+.black-background-header {
+  position: relative;
+  font-weight: 600;
+}
+.black-background-line {
+  min-height: 2px;
+  width: calc(100% - 50px);
+  position: absolute;
+  background-color: white;
+  position: absolute;
+}
+.about-me-points {
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 10;
+  width: 50%;
+}
+.about-me-details {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  z-index: 10;
+  overflow: hidden;
+  align-items: center;
+}
+#profile-image {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.profile-image {
+  width: 30%;
+  height: 40%;
+  position: relative;
+  z-index: 1; /* Add z-index here to establish a stacking context */
+}
+
+.profile-image::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-green-color);
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+}
+
+.skill-logos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 20%;
+  height: 90vh;
+  user-select: none;
+  /* animation: scroll 1s infinite linear; */
+  flex-shrink: 0;
+
+  /* Add any other styles you need */
+}
+
+.skill-logos i {
+  font-size: 35px;
+  color: #086f57;
+  padding: 20px 10px;
+}
+
+.skill-logos::-webkit-scrollbar {
+  display: none;
+}
+.icon-container {
+  padding: 40px;
+  display: flex;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .about-me-details {
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+    padding: 0;
+  }
+  .black-background {
+    padding: 30px;
+  }
+  .skill-logos {
+    padding: 10px 0;
+    width: 80%;
+  }
+  .about-me-points {
+    padding: 0;
+  }
+}

@@ -1,0 +1,131 @@
+.experience-container {
+  background-color: black;
+  color: white;
+  z-index: 1;
+  padding: 5% 10%;
+  box-sizing: border-box;
+}
+
+
+.experience-header p {
+  font-size: 26px;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  color: var(--background-green-color);
+
+}
+.experience-header {
+  position: relative;
+  text-align: right;
+}
+.experience-header-line {
+  min-height: 2px;
+  width: calc(60% - 50px);
+  position: absolute;
+  background-color: white;
+  position: absolute;
+  right: 0;
+}
+
+.experience-details-left ul {
+  list-style-type: none;
+  width: 220px;
+  font-size: 13px;
+}
+
+.experience-details-left ul li {
+  width: calc(100% - 1px);
+  height: 50px;
+  width: 220px;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.experience-details-left ul li:hover {
+  cursor: pointer;
+}
+
+.experience-details-left ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  background-color: #8892b0;
+  transition: opacity 0.3s ease;
+}
+
+.experience-details-left ul li:hover::before,
+.experience-details-left ul li:focus::before {
+  background-color: var(--background-green-color);
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.experience-details-left {
+  flex-grow: 1;
+  padding: 0;
+  padding: 10% 10px;
+}
+
+.experience-details-right {
+  flex-grow: 1;
+  width: 70%;
+  gap: 1rem;
+  padding: 2rem 2rem;
+}
+
+.experience-title {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+.experience-title span {
+  color: var(--background-green-color);
+}
+.experience-timeline {
+  font-size: 13px;
+  margin-bottom: 2rem;
+}
+.experience-description {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  border: 0;
+  gap: 1rem;
+  font-size: 18px;
+}
+@media screen and (max-width: 760px) {
+  .experience-container {
+    padding: 30px;
+  }
+
+  .experience-details {
+    flex-direction: column;
+  }
+  .experience-details-left ul {
+    display: flex;
+    width: auto;
+  }
+  .experience-details-right {
+    width: auto;
+  }
+
+  .experience-details-left ul li::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 3px;
+    width: 80%;
+    background-color: #8892b0;
+    transition: opacity 0.3s ease;
+  }
+}

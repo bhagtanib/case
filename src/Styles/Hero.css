@@ -1,0 +1,130 @@
+.hero-container {
+  height: calc(100vh);
+  width: 100vw;
+  z-index: 100;
+  background-color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  cursor: pointer;
+  height: 30%;
+  /* z-index: -1;  */
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+.hero-container > * {
+  color: white;
+}
+.hero-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px 60px 0 60px;
+}
+.hero-nav-container-right {
+  color: var(--background-green-color);
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  cursor: pointer;
+}
+.hero-nav-container-right img{
+  height: 20px;
+  width: 20px;
+}
+.hero-nav-headers-container {
+  display: flex;
+  gap: 20px;
+}
+.hero-nav-header-nodata,
+.hero-nav-header-data {
+  font-weight: 600;
+  font-size: medium;
+  position: relative;
+  cursor: pointer;
+}
+.hero-nav-header-nodata::after, .hero-nav-header-data-item::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  background-color: var(--background-green-color);
+  width: 0%;
+  height: 1px;
+  transition: all 0.3s ease-in-out;
+}
+.hero-nav-header-data-item{
+  position: relative;
+  width: fit-content;
+}
+.hero-nav-header-nodata:hover::after, .hero-nav-header-data-item:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.hero-nav-header-data-item-container {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: calc(100%);
+  padding: 25px 0;
+  min-width: 900%;
+  gap: 15px;
+}
+.hero-nav-header-data:hover .hero-nav-header-data-item-container {
+  display: flex;
+}
+.hero-nav-header-data-item-container::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -20px;
+  width: 2px;
+  height: calc(100% - 10px);
+  background-color: var(--background-green-color);
+}
+
+.hero-info-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-blocks {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-info-block-first {
+  font-size: smaller;
+  align-self: self-start;
+}
+.hero-info-block-second {
+  font-size: 80px;
+  align-self: self-start;
+  width: fit-content;
+}
+
+.hero-info-block-third {
+  font-size: large;
+  font-family: orpheus-pro;
+  display: flex;
+  flex-direction: column;
+  align-self: self-end;
+  margin-top: 10px;
+  gap: 5px;
+  color: var(--background-green-color);
+}

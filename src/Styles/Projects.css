@@ -1,0 +1,18 @@
+.project-lists-container{
+    background-color: black;
+    color: white;
+}
+.projects-list
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    height: 500px;
+}
+.project-lists-header p{
+    color: var(--background-green-color);
+    font-weight: 800;
+}
+/* .project-lists-header p span{
+    color: white
+} */

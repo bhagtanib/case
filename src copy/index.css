@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --light-black: rgb(25, 24, 24);
+  --details-black: rgb(16, 16, 16);
+  /* --background-color: #64ffda; */
+  --background-green-color: #1cc79f;
+  --backgroung--light-grey: #f6f6f6;
+  --lightest-grey: #f8f9f8;
+
+}
+
+*{
+  font-family: "Asap", sans-serif;
+  font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text';
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}

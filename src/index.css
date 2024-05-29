@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300;500;600;700&display=swap');
+
+/* Define Typekit Fonts */
+@font-face {
+  font-family: orpheus-pro;
+  src: url(https://use.typekit.net/af/4f5611/00000000000000007735ebd5/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),
+       url(https://use.typekit.net/af/4f5611/00000000000000007735ebd5/30/d?subset_id=2&fvd=n4&v=3) format("woff"),
+       url(https://use.typekit.net/af/4f5611/00000000000000007735ebd5/30/a?subset_id=2&fvd=n4&v=3) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+
+:root{
+  --light-black: rgb(25, 24, 24);
+  --details-black: rgb(16, 16, 16);
+  /* --background-color: #64ffda; */
+  --background-green-color: #1cc79f;
+  --backgroung--light-grey: #f6f6f6;
+  --lightest-grey: #f8f9f8;
+
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif; /* Use Google Font */
+}
