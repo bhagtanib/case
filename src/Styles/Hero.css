@@ -25,9 +25,18 @@
 }
 .hero-nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   padding: 30px 60px 0 60px;
+}
+.hero-nav-container-left{
+  display: flex;
+  align-items: flex-end;
+}
+.hero-nav-container-left img{
+  height: 28px;
+  bottom: 0;
+  left: 100%;
 }
 .hero-nav-container-right {
   color: var(--background-green-color);

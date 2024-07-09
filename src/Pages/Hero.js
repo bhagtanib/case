@@ -17,14 +17,18 @@ const Hero = ({ heroRef, handleScroll }) => {
     {
       heading: "Projects",
       data: [
-        { title: "Comfort Cart", link: "https://comfortcart.web.app/" },
+        { title: "CodeNow", link: "https://codenoww.netlify.app/" },
+
+        {
+          title: "Comfort Cart",
+          link: "https://comfortcart.web.app/",
+        },
         { title: "Pelicule", link: "https://pelicula1.netlify.app/" },
         {
           title: "House Worth",
           link: "https://github.com/Mradul9756/House-Worth-Web-App",
         },
         { title: "Space Wars", link: "https://github.com/bhagtanib/Space-War" },
-        { title: "Code Now", link: "" },
       ],
     },
     {
@@ -34,14 +38,30 @@ const Hero = ({ heroRef, handleScroll }) => {
           title: "Specialization in JavaScript Programming",
           link: "/certificate/Specialization in JavaScript Programming.pdf",
         },
-        { title: "Introduction to HTML, CSS, & JavaScript", link: "/certificate/Introduction to HTML, CSS, & JavaScript.pdf" },
-        { title: "Introduction to Software Engineering", link: "/certificate/Introduction to Software Engineering.pdf" },
-        { title: "JavaScript Programming Essentials", link: "/certificate/JavaScript Programming Essentials.pdf" },
-        { title: "Developing Back-End Apps with Node.js and Express", link: "/certificate/Developing Back-End Apps with Node.js and Express.pdf" },
-        { title: "Developing Frontend with React", link: "certificate/Developing Frontend with React.pdf" },
-        { title: "Getting Started with Git and GitHub", link: "/certificate/Getting Started with Git and GitHub.pdf" },
-
-        
+        {
+          title: "Introduction to HTML, CSS, & JavaScript",
+          link: "/certificate/Introduction to HTML, CSS, & JavaScript.pdf",
+        },
+        {
+          title: "Introduction to Software Engineering",
+          link: "/certificate/Introduction to Software Engineering.pdf",
+        },
+        {
+          title: "JavaScript Programming Essentials",
+          link: "/certificate/JavaScript Programming Essentials.pdf",
+        },
+        {
+          title: "Developing Back-End Apps with Node.js and Express",
+          link: "/certificate/Developing Back-End Apps with Node.js and Express.pdf",
+        },
+        {
+          title: "Developing Frontend with React",
+          link: "certificate/Developing Frontend with React.pdf",
+        },
+        {
+          title: "Getting Started with Git and GitHub",
+          link: "/certificate/Getting Started with Git and GitHub.pdf",
+        },
       ],
     },
     {
@@ -102,20 +122,13 @@ const Hero = ({ heroRef, handleScroll }) => {
   };
   return (
     <motion.div className="hero-container" ref={heroRef}>
-      {/* <motion.video
-        ref={videoRef}
-        src={vid}
-        autoPlay
-        style={{ cursor: "pointer" }}
-        loop
-        muted
-        className="video"
-        onMouseMove={handleMouseMove}
-        animate={controls}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-      ></motion.video> */}
       <div className="hero-nav-container">
-        <div className="hero-nav-container-left">LOGO</div>
+        <div className="hero-nav-container-left">
+          <img
+            src="https://img.icons8.com/pastel-glyph/64/FFFFFF/shuttercock.png"
+            alt="shuttercock"
+          />
+        </div>
         <div className="hero-nav-container-mid">
           <div className="hero-nav-headers-container">
             {navData.map((item, index) => (

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import "../Styles/Projects.css";
 import { projectsArray } from "../data/projectsArray";
 import Marquee from "react-fast-marquee";
-
+import Carousel from "../Carousel/Carousel"
 const Projects = () => {
   return (
     <div className="black-background project-lists-container">
@@ -30,11 +30,12 @@ const Projects = () => {
         ></motion.span> */}
       </div>
       <div className="projects-list">
-        <Marquee speed={150}>
+        {/* <Marquee speed={150}>
           {projectsArray.map((current, index) => (
             <Project index={index} currentProject={current} />
           ))}
-        </Marquee>
+        </Marquee> */}
+        <Carousel items={projectsArray} itemsToShow={3}/>
       </div>
     </div>
   );

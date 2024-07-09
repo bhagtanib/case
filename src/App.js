@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 import BackgroudPage from "./Pages/BackgroudPage";
-import Empty from "./Pages/Empty";
+// import Empty from "./Pages/Empty";
 import Experience from "./Pages/Experience";
 import Hero from "./Pages/Hero";
 import { helix } from "ldrs";
